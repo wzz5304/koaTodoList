@@ -1,0 +1,121 @@
+// .login-layout {
+//     width: 100%;
+//     height: 100%;
+//     background: #eee;
+//     position: absolute;
+// }
+
+// .login-form {
+//     max-width: 420px;
+//     margin: auto;
+//     padding: 20px 20px 10px 20px;
+//     background: rgba(255,255,255,0.8);
+//     width: 100%;
+// }
+// .login-form-forgot {
+//     float: right;
+// }
+// .login-form-button {
+//     width: 100%;
+//     margin-top: 10px;
+// }
+// .login-title {
+//     margin-bottom: 1em;
+// }
+.flex{
+    display: flex;
+}
+.flex1{
+    flex: 1;
+}
+.flex-vertical-center{
+    align-items: center;
+}
+.login-wrapper{
+    height: 100%;
+    color: #AAAAAA;
+    .left-wrapper{
+        background: url('login_bg.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .right-wrapper{
+        width: 460px;
+        height: 100%;
+        padding: 50px 0;
+        background: #fff;
+        .login-title{
+            font-size: 22px;
+            color: #1456FC;
+            text-align: center;
+
+        }
+        .page-login{
+            height: 100%;
+            justify-content: center;
+            .login-form{
+                width: 340px;
+                margin-top: -50px;
+                height: 263px;
+                background-color: #fff;
+                padding: 25px;
+                border-radius: 4px;
+                box-shadow: 0 0 2px 2px rgba(170, 170, 170, 0.1);
+                .padding-left{
+                    .ant-input{
+                        height: 40px;
+                        padding-left: 70px;
+                        border: 1px solid #eee;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        border-radius: 0;
+                        transition: all 1s;
+                        &:hover{
+                            outline: none;
+                            box-shadow: none;
+                            border-bottom: 1px solid #1456FC;
+                        }
+                        &:focus{
+                            outline: none;
+                            box-shadow: none;
+                            border-bottom: 1px solid #1456FC;
+                        }
+                    }
+                    .ant-input:-webkit-autofill{
+                        box-shadow: 0 0 0 1000px white inset!important; 
+                        background-color: #fff !important;
+                    }
+                }
+                // .ant-form-explain{
+                //     margin-top: 5px;
+                // }
+                .ant-checkbox-inner{
+                    //background-color: #1890ff;
+                    border-color: #ccc;
+                }
+                .ant-checkbox-checked .ant-checkbox-inner{
+                    background-color: #1890ff;
+                    border-color: #1890ff;
+                }
+                .login-form-forgot{
+                    color: #1890ff;
+                }
+                .login-form-button{
+                    height: 42px;
+                    background-color: #1456FC;
+                    width: 100%;
+                    &:hover{
+                        background-color: #4783FE;
+                    }
+                }
+                // .links{
+                //     margin-bottom: 0;
+                //     .ant-form-item-children{
+                //         display: flex;
+                //         justify-content: space-between;
+                //     }
+                // }
+            }
+        }
+    }
+}

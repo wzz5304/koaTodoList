@@ -1,0 +1,86 @@
+@import "~antd/lib/style/themes/default.less";
+
+body {
+  overflow: hidden;
+}
+.ant-table-thead > tr > th.table-action, .ant-table-tbody > tr > td.table-action {
+  text-align: center;
+}
+.ant-cascader-menu-item-active {
+  color: #019BF0;
+}
+// html .ant-table-title {
+//   padding: 8px 0;
+// }
+
+html .ant-table-thead>tr>th {
+  border-bottom: 1px solid #eee  !important;
+  border-top: 1px solid #eee !important;
+}
+
+html .ant-table-thead .split-table-style{
+  border-top: 0 !important;
+}
+
+.ant-table-tbody > tr > td span.action-button{
+  color: #18B583;
+}
+html .ant-table-fixed-right, .ant-table-fixed-right table {
+  border-radius: 0;
+  //z-index: 2;
+}
+html .ant-table-title + .ant-table-content {
+  border-radius: 0;
+}
+html .ant-table-bordered .ant-table-header > table, .ant-table-bordered .ant-table-body > table, .ant-table-bordered .ant-table-fixed-left table, .ant-table-bordered .ant-table-fixed-right table {
+  border-top: none;
+  border-radius: 0;
+}
+
+html .ant-table.ant-table-bordered .ant-table-title {
+  border: 0;
+  padding: 5px 0;
+}
+
+/* 表格 td 样式 */
+html .ant-table-bordered .ant-table-thead > tr > th, html .ant-table-bordered .ant-table-tbody > tr > td {
+  padding: 10px;
+  position: relative;
+  height: 38px;
+}
+/* 表格 td 样式 */
+
+.table-action-box > button, .table-action-box > span {
+  margin: 0 5px;
+}
+.ant-table-thead > tr > th.table-action-box, .table-action-box {
+  text-align: center;
+}
+
+.tableview-box {
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+.flex-vertical-center{
+    align-items: center;
+}
+.ant-table.ant-table-bordered .ant-table-title{
+    padding: 0;
+}
+.react-resizable {
+    position: relative;
+}
+  
+.react-resizable-handle {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    bottom: 0;
+    right: -5px;
+    cursor: col-resize;
+}
+.ant-pagination-options-size-changer.ant-select{
+    margin-right: 0;
+}
